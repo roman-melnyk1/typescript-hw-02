@@ -1,0 +1,20 @@
+.gallery {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
